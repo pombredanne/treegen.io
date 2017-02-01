@@ -1,0 +1,75 @@
+@import "normalize";
+@import "codemirror";
+
+$light-grey: #d3dbeb;
+$dark-blue: #23232e;
+*,
+::after,
+::before { box-sizing: border-box; }
+
+html, body {
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+
+body {
+  background: $dark-blue;
+}
+
+a {
+  color: #d3dbeb;
+}
+
+.app {
+  display: flex; flex-direction: column;
+  height: 100vh;
+  position: relative;
+}
+
+.header {
+  background: lighten($dark-blue, 8%);
+  display: flex; align-items: center;
+  height: 60px;
+  padding: 0 20px;
+}
+.logo {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  margin: 0;
+  a {
+    color: $light-grey;
+    text-decoration: none;
+  }
+}
+
+.workspace {
+  display: flex;
+  position: absolute; top: 60px; left: 0; bottom: 0;
+  width: 100vw;
+  &-pane {
+    width: 50%; height: 100%;
+    position: relative;
+    .pane-header {
+      display: flex; align-items: center;
+      height: 32px;
+      padding: 0 20px;
+      h4 {
+        color: rgba($light-grey, 0.5);
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        letter-spacing: 0.08em;
+      }
+    }
+    &-textarea {
+      background: $dark-blue;
+      width: 100%;
+      font-family: monospace;
+      padding: 20px;
+      position: absolute; top: 32px; left: 0; bottom: 0;
+      outline: none;
+      resize: none;
+    }
+  }
+}
