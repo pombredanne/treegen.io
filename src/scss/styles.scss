@@ -36,6 +36,21 @@ a {
   display: flex; align-items: center;
   height: 60px;
   padding: 0 20px;
+  .nav {
+    display: flex;
+    margin-left: auto;
+    &-item {
+      color: $light-grey;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-left: 20px;
+      a {
+        color: $light-grey;
+      }
+    }
+  }
 }
 .logo {
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -68,6 +83,7 @@ a {
     }
     &-textarea {
       background: $dark-blue;
+      color: #fff;
       border: none;
       font-size: 1rem;
       width: 100%;

@@ -13,6 +13,10 @@
     <div class="app">
       <header class="header">
         <h3 class="logo"><a href="/">treegen.io</a></h3>
+        <nav class="nav">
+          <div class="nav-item">A project by <a href="http://twitter.com/bowersbros" target="_blank" rel="noopener">Alex Bowers</a></div>
+          <div class="nav-item"><a href="https://github.com/treegen-io/treegen.io" target="_blank" rel="noopener">Source Code</a></div>
+        </nav>
       </header>
       <div class="workspace">
         <div class="workspace-pane editor">
