@@ -3,12 +3,15 @@
 
 $light-grey: #d3dbeb;
 $dark-blue: #23232e;
+$purple: #9a6bc9;
+$accent: $purple;
 *,
 ::after,
 ::before { box-sizing: border-box; }
 
 html, body {
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-size: 16px;
   height: 100vh;
   overflow-x: hidden;
 }
@@ -52,6 +55,7 @@ a {
     position: relative;
     .pane-header {
       display: flex; align-items: center;
+      border-bottom: 2px solid #9a6bc9;
       height: 32px;
       padding: 0 20px;
       h4 {
@@ -64,12 +68,19 @@ a {
     }
     &-textarea {
       background: $dark-blue;
+      border: none;
+      font-size: 1rem;
       width: 100%;
       font-family: monospace;
       padding: 20px;
       position: absolute; top: 32px; left: 0; bottom: 0;
       outline: none;
       resize: none;
+    }
+    .CodeMirror {
+      border-right: 2px solid darken($dark-blue, 3%)!important;
+      font-size: 1rem;
+      height: 100%;
     }
   }
 }

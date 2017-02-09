@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <title>Treegen.io</title>
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed" rel="stylesheet">
-    <link rel="stylesheet" href="/dist/styles.css">
+    <script type="text/javascript" src="/dist/js/codemirror.js"></script>
+    <script type="text/javascript" src="/dist/js/modes.js"></script>
+    <link rel="stylesheet" href="/dist/css/styles.css">
+    <link rel="stylesheet" href="/dist/css/dracula.css">
   </head>
   <body>
     <div class="app">
@@ -22,8 +25,7 @@
         </div>
       </div>
     </div>
-    <script type="text/javascript" src="/dist/app.js">
+    <script type="text/javascript" src="/dist/js/app.js"></script>
 
-    </script>
   </body>
 </html>

@@ -1,4 +1,5 @@
 {
-  "mix.js": "mix.js",
-  "dist/styles.css": "dist/styles.css"
+  "/mix.js": "/mix.js",
+  "/dist/css/styles.css": "/dist/css/styles.css",
+  "dist/js/modes.js": "dist/js/modes.js"
 }
